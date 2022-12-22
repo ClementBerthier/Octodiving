@@ -3,12 +3,16 @@ import "./stylesNavBar.scss";
 
 function Navbar (){
     return (
-        <div className="navbar">
-            <img src="" alt="Poulpe" />
-            <NavLink to="/">Présentation</NavLink>
-            <NavLink to="/professionnel">Professionnnel</NavLink>
-            <NavLink to="/calendrier">Calendrier</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+        <div className="container">
+            <div className="navbar">
+                <img src="../img\poulpe.png" alt="Poulpe" />
+                <div className="navlink">
+                    <NavLink to="/" className={"link"}>Présentation</NavLink>
+                    <NavLink to="/professionnel" className={"link"}>Professionnnel</NavLink>
+                    <NavLink to="/calendrier" className={"link"}>Calendrier</NavLink>
+                    <NavLink to="/contact" className={"link"}>Contact</NavLink>
+                </div>                
+            </div>
         </div>
     )
 }
