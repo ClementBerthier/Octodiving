@@ -1,0 +1,16 @@
+.presentation{
+
+    .welcome{
+        background-image: url("../../public/img/plongeur-presentation.jpg");
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 12em;
+        
+        & h1{
+            color: white;
+            text-align: center;
+            font-size: 4em;
+        }
+    }
+}

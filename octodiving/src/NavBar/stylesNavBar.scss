@@ -1,34 +1,32 @@
-    .container{
-        min-width: max-content;
-        background-color: RGB(26, 148, 243);
-        
-        .navbar{
-            margin: 0 30em;
-            display: flex;
-            align-items: center;
-            
-            .navlink{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                width: 100%;
-                margin: 1em;
+.navbar{
+    min-width: max-content;
+    padding: 1em 0em;
+    background-color: RGB(26, 148, 243);
     
-                .link{
-                    padding: 1em;
-                    color: white;
-                    font-size: 1.2em;
-                }
-    
-                .link:hover{
-                    background-color: RGB(26, 87, 219);
-                }
-            }
-    
-    
-            img{
-                height: 10em;
-                margin-left: 4em;  
-            }
+    .navlink{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center ;
+        gap: 4em;
+
+        width: 100%;
+
+        .link{
+            padding: 1em;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .link:hover{
+            background-color: RGB(26, 87, 219);
+        }
+
+        img{
+            height: 8em;        
         }
     }
+
+
+    
+}

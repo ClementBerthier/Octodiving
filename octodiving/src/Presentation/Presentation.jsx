@@ -1,16 +1,17 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../NavBar/NavBar";
 
+import "./stylesPresentation.scss";
+
 function Presentation (){
     return (
         <>
         <Navbar />
-        <div>
-            <div>
-                <img src="" alt="plongeur" />
+        <div className="presentation">
+            <div className="welcome">
                 <h1>Bienvenue chez Octo Diving</h1>
             </div>
-            <div>
+            <div className="secondMainDiv">
                 <div>
                     <p>Besoin d'un coup de main !?</p>
                 </div>
