@@ -1,5 +1,4 @@
 .navbar{
-    min-width: max-content;
     padding: 1em 0em;
     background-color: RGB(26, 148, 243);
     
@@ -9,7 +8,6 @@
         align-items: center;
         justify-content:center ;
         gap: 4em;
-
         width: 100%;
 
         .link{
@@ -23,7 +21,7 @@
         }
 
         img{
-            height: 8em;        
+            height: 8em;
         }
     }
 

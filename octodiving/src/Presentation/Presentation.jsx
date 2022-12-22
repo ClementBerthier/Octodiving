@@ -12,44 +12,50 @@ function Presentation (){
                 <h1>Bienvenue chez Octo Diving</h1>
             </div>
             <div className="secondMainDiv">
-                <div>
+                <div className="firstParagraph">
                     <p>Besoin d'un coup de main !?</p>
                 </div>
-                <div>
+                <div className="secondParagraph">
                     <p>Vous êtes un centre professionnel ou un club associatif de plongée, et vous êtes à la recherche d'un moniteur de plongée pour renforcer votre équipe ?</p>
                     <p>Vous êtes au bon endroit ! </p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <div>01</div>
-                        <div>
+            <div className="advantage">
+                <div className="advantageSkill">
+                    <div className="Skill">
+                        <p className="number">01</p>
+                        <div className="textSkill">
                             <h2>Mobile</h2>
                             <p>Vivant dans un  fourgon aménagé</p>
                         </div>
                     </div>
-                    <div>
-                        <div>02</div>
-                        <div>
+                    <div className="Skill">
+                        <p className="number">02</p>
+                        <div className="textSkill">
                             <h2>Multi système</h2>
                             <p>Système français, PADI et SSI</p>
                         </div>
                     </div>
-                    <div>
-                        <div>03</div>
-                        <div>
+                    <div className="Skill">
+                        <p className="number">03</p>
+                        <div className="textSkill">
                             <h2>Multi fonction</h2>
-                            <p>Moniteur de plongée, Instructeur de secourisme DAN, mécanique</p>
+                            <p>Moniteur de plongée</p>
+                            <p>Instructeur de secourisme DAN</p>
+                            <p>mécanique</p>
                         </div>
                     </div>
                     
                 </div>
+                <div className="advantagePicture">
+                    <img src="../img/photo-plongeur.jpg" alt="plongeur" />
+                </div>
                 <div>
-                    <img src="" alt="" />
+                    <div className="square"></div>
+                    <div className="rectangle"></div>
                 </div>
             </div>
-            <div>
+            <div className="description">
                 <div>
                     <h1>Qui suis-je ?!</h1>
                 </div>

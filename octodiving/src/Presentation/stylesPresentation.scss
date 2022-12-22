@@ -1,16 +1,91 @@
 .presentation{
-
     .welcome{
         background-image: url("../../public/img/plongeur-presentation.jpg");
         background-size: cover ;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;    
         padding: 12em;
         
-        & h1{
+        h1{
             color: white;
             text-align: center;
-            font-size: 4em;
+            font-size: 3.5em;
+            font-weight: 900;
         }
+    }
+
+    .secondMainDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: RGB(244, 244, 244);
+
+        
+        .firstParagraph{
+            margin: 1.5em 0em;
+            padding: 0.5em;
+            text-align: end;
+            font-size: 2.5em;
+            font-weight:800;
+            border-right: 2px solid black;
+        }
+
+        .secondParagraph{
+            padding: 0 2.5em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+
+    .advantage{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .advantageSkill{
+            margin: 1em 0;
+            color: RGB(36, 36, 151);
+
+            .number{
+                padding: 0 0.5em;
+                margin: 0;
+                color: RGB(247, 129, 82);
+                font-size: 4em;
+                font-weight: 900;         
+            }
+
+            .Skill{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 1.5em 0
+
+            }
+
+            .textSkill{
+                h2, p{
+                    margin: 0
+                }
+                
+            }
+        }
+
+        .advantagePicture{
+            height: 30em;
+
+            img{
+                height: 100%;
+                padding: 1.5em 4em;
+
+            }
+
+        }
+    }
+
+    .description{
+        background-color: RGB(244, 244, 244);
+    
     }
 }
