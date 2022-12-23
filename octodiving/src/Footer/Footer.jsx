@@ -3,12 +3,15 @@ import {Link} from 'react-router-dom';
 import "./stylesFooter.scss";
 
 function Footer (){
+
+    
+
     return (
         <div className="footer">
             <div className="contact">
                 <div className="contactContainer">
                     <div>
-                        <h1></h1>   {/* Nos clients */}
+                        <h1> </h1>   {/* Nos clients */}
                         <div className="clientList"></div> {/* La liste des client, css non fait attente du format*/}
                     </div>
                     <div>
@@ -28,7 +31,9 @@ function Footer (){
                                 </div>
                                 <div className="contactText">
                                     <p className="contactTitle">E-mail: </p>
-                                    <Link to="florian.bessiere.pro@gmail.com" className="contactValue">florian.bessiere.pro@gmail.com</Link>
+                                    <a href="mailto:florian.bessiere.pro@gmail.com"
+                                        className="contactValue"
+                                        >florian.bessiere.pro@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +42,7 @@ function Footer (){
             </div>
             <div className='endingFooter'>
                 <div className="returnPresentation">
-                    <Link to="/presentation">
+                    <Link to="/">
                         <img src="../img/nom-vectoriel-couleur.png" alt="Logo-site" />
                     </Link>
                 </div>

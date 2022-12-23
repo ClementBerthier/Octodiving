@@ -64,12 +64,7 @@
 
             }
 
-            .textSkill{
-                h2, p{
-                    margin: 0
-                }
-                
-            }
+          
         }
 
         .advantagePicture{
@@ -88,6 +83,7 @@
         background-color: RGB(244, 244, 244);
 
         .descriptionContainer{
+            margin: 0 10em;
             padding: 10em;
         }
 
@@ -100,6 +96,8 @@
             .dash{
                 border: 1px solid black;
                 margin-right: 60em;
+                padding-right: 10em;
+                position: absolute;
             }
         }
 
@@ -107,10 +105,11 @@
 
             h2{
                 margin: 1em 0;
+                padding-top: 1em;
             }
 
             ul{
-                margin-left: 2em;
+                margin-left: 1em;
             }
 
             .specialityList{
