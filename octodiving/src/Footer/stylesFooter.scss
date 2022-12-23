@@ -1,0 +1,80 @@
+.footer{
+    background-color: RGB(28, 28, 28);
+    
+    .contact{
+        border-bottom: 1px solid grey;
+
+        .contactContainer{
+            padding: 4em 8em;
+
+            h1{
+                color: RGB(26, 148, 243);
+            }
+
+            .clientList{
+                padding: 2em
+            }
+
+            .contactDetail{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .way{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;                    
+                }
+
+                .contactText{
+                    font-size: 1.5em;
+                    padding: 1em 1.5em;
+                    color: white; 
+                    
+                    .contactValue{
+                        font-size: 1.3em;
+                        color: white;
+                        font-weight: 800;
+
+                        
+
+                    }
+
+                    .contactTitle{
+                        color: RGB(138, 139, 141);
+                        margin: 0.5em 0;
+                    }
+                }
+
+                
+
+            }
+        }
+    }
+
+    .endingFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1em 0;
+
+        .logo{
+            
+           .linkLogo{
+            margin: 2em;
+           }
+        }
+
+        .returnPresentation{
+
+            img{
+                padding: 1.5em;
+                width: 30%;
+                
+            }
+        }
+    }
+
+
+}
