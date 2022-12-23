@@ -16,9 +16,11 @@
             font-size: 1.2em;
         }
 
-        .link:hover{
+        .link:hover, .active{
             background-color: RGB(26, 87, 219);
         }
+
+        
 
         img{
             height: 8em;
