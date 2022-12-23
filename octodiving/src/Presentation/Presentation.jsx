@@ -56,59 +56,62 @@ function Presentation (){
                 </div>
             </div>
             <div className="description">
-                <div>
-                    <h1>Qui suis-je ?!</h1>
-                </div>
-                <div>
-                    <h2>Description</h2>
-                    <ul>
-                        <li>Dessinateur industriel en mécanique au sein d'une grande entreprise pendant 10 ans.</li>
-                        <li>Après la découverte de la plongée, et le passage de tous mes niveaux loisir. J'ai décidé de passer en 2022 mon DEJEPS de moniteur de plongée au sein du CREPS de Montpellier et de la structure Plongée Bleue de Banyuls-sur-Mer.</li>
-                        <li>J'ai ensuite ouvert mon auto-entreprise de moniteur de plongée en structure.</li>
-                        <li>Pour optimiser mon fonctionnement j'ai ensuite aménagé un fourgon et y vie dedans à l'année ce qui facilité mes déplacements dans les structures.</li>
-                    </ul>
-                    <h2>Certifications</h2>
-                    <ul>
-                        <li>DEJEPS E3</li>
-                        <li>OWSI PADI :
-                            <ul>
-                                <li>Spécialité :
-                                    <ul>
-                                        <li>Deep Diver</li>
-                                        <li>DSMBD</li>
-                                        <li>Dry Suit Diver</li>
-                                        <li>Enriched Air Diver</li>
-                                        <li>U/W Navigator</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>OWSI SSI :
-                            <ul>
-                                <li>Spécialités :
-                                    <ul>
-                                        <li>Marine Ecology</li>
-                                        <li>Stress & Rescue</li>
-                                        <li>Perfect Buoyancy</li>
-                                        <li>Navigation</li>
-                                        <li>Night diving and Limited visibility</li>
-                                        <li>Deep Diving</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Dan Instructor :
-                            <ul>
-                                <li>Spécialités
-                                    <ul>
-                                        <li>IQC</li>
-                                        <li>PBLS-D</li>
-                                        <li>First Aid</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div className="descriptionContainer">
+                    <div className="descriptionTitle">
+                        <h1>Qui suis-je ?!</h1>
+                        <div className="dash"></div>
+                    </div>
+                    <div className="firstDescription">
+                        <h2>Description</h2>
+                        <ul>
+                            <li className="firstItemList">Dessinateur industriel en mécanique au sein d'une grande entreprise pendant 10 ans.</li>
+                            <li className="firstItemList">Après la découverte de la plongée, et le passage de tous mes niveaux loisir. J'ai décidé de passer en 2022 mon DEJEPS de moniteur de plongée au sein du CREPS de Montpellier et de la structure Plongée Bleue de Banyuls-sur-Mer.</li>
+                            <li className="firstItemList">J'ai ensuite ouvert mon auto-entreprise de moniteur de plongée en structure.</li>
+                            <li className="firstItemList">Pour optimiser mon fonctionnement j'ai ensuite aménagé un fourgon et y vie dedans à l'année ce qui facilité mes déplacements dans les structures.</li>
+                        </ul>
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li className="firstItemList">DEJEPS E3</li>
+                            <li className="firstItemList">OWSI PADI :
+                                <ul>
+                                    <li className="specialityList">Spécialité :
+                                        <ul>
+                                            <li className="secondItemList">Deep Diver</li>
+                                            <li className="secondItemList">DSMBD</li>
+                                            <li className="secondItemList">Dry Suit Diver</li>
+                                            <li className="secondItemList">Enriched Air Diver</li>
+                                            <li className="secondItemList">U/W Navigator</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="firstItemList">OWSI SSI :
+                                <ul>
+                                    <li className="specialityList">Spécialités :
+                                        <ul>
+                                            <li className="secondItemList">Marine Ecology</li>
+                                            <li className="secondItemList">Stress & Rescue</li>
+                                            <li className="secondItemList">Perfect Buoyancy</li>
+                                            <li className="secondItemList">Navigation</li>
+                                            <li className="secondItemList">Night diving and Limited visibility</li>
+                                            <li className="secondItemList">Deep Diving</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="firstItemList">Dan Instructor :
+                                <ul>
+                                    <li className="specialityList">Spécialités
+                                        <ul>
+                                            <li className="secondItemList">IQC</li>
+                                            <li className="secondItemList">PBLS-D</li>
+                                            <li className="secondItemList">First Aid</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
