@@ -4,9 +4,8 @@
     
     .navlink{
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content:center ;
+        justify-content: center;        
         gap: 4em;
         width: 100%;
 
@@ -20,13 +19,84 @@
             background-color: RGB(26, 87, 219);
         }
 
-        
-
         img{
             height: 8em;
         }
+
+        .burger{
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: none;
+            color: inherit;
+        }
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 2.5em 0;
+        
+    }
+    .navlink{
+        flex-direction: column;
+        position: fixed;
+        right: -100vh;
+        bottom: 0;
+        padding: 2rem;
+        height: 100vh;
+        background-color: rgb(146, 146, 146);
+        align-items: center;
+        justify-content: center;
     }
 
-
+    .showNav{
+       right: 0;
+       width: 100vw;
+       visibility: visible;
+       
+    }
     
+    
+    .link{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+    }
+
+    .burger{
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .burger:hover{
+        cursor: pointer;
+    }
+
+    .burgerBar,
+    .burgerBar::before,
+    .burgerBar::after{
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background-color: white;        
+    }
+
+    .burgerBar::before,
+    .burgerBar::after {
+        content:"";
+        position: absolute;
+        left:0;
+    }
+    
+    .burgerBar::before{
+        transform: translateY(-12px);
+    }
+
+    .burgerBar::after{
+        transform: translateY(12px);
+    }
 }
