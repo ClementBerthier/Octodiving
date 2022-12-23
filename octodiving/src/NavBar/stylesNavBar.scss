@@ -2,6 +2,14 @@
     padding: 1em 0em;
     background-color: RGB(26, 148, 243);
     
+    .burger{
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        color: inherit;
+        
+    }
     .navlink{
         display: flex;
         align-items: center;
@@ -23,13 +31,6 @@
             height: 8em;
         }
 
-        .burger{
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border: none;
-            color: inherit;
-        }
     }    
 }
 
@@ -54,6 +55,7 @@
        right: 0;
        
     }
+
     
     
     .link{
@@ -61,12 +63,17 @@
         padding: 1.5rem;
         font-size: 5vw;
     }
-
-    .burger{
-        position: fixed;
+    
+    .burger {
+        position: sticky;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
+        visibility: visible;
+        padding-left: 2em;
     }
+
+   
+  
 
     .burger:hover{
         cursor: pointer;

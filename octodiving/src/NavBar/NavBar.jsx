@@ -5,14 +5,22 @@ import "./stylesNavBar.scss";
 
 function Navbar (){
     const [showLinks, setShowLinks]= useState(false);
+    const [showBurger, setShowBurger] = useState(false);
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
     }
-     
+
+ 
 
     return (
         <div className="navbar">
+                <button
+                    className="burger"
+                    onClick={handleShowLinks}
+                >
+                    <span className="burgerBar"></span>
+                </button>
             <div className={`navlink ${showLinks ? "showNav" : "hideNav"}`}>
                 <a href="/" className={"linkLogo"}>
                     <img src="../img/Logo-poulpe.png" alt="Poulpe" />
@@ -21,13 +29,8 @@ function Navbar (){
                 <NavLink to="/professionnel" className={"link"}>Professionnnel</NavLink>
                 <NavLink to="/calendrier" className={"link"}>Calendrier</NavLink>
                 <NavLink to="/contact" className={"link"}>Contact</NavLink>
-                <button
-                    className="burger"
-                    onClick={handleShowLinks}
-                >
-                    <span className="burgerBar"></span>
-                </button>
-            </div>                
+            </div>
+                         
         </div>
     )
 }
