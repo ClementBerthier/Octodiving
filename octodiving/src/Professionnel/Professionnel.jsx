@@ -16,7 +16,8 @@ function Professionnel (){
                         <PriceArray />
                     </div>
                 </div>
-                <div>
+                <div className="formContainer">
+                    <h2>Vos Rensignements</h2>
                     <Formulaire />
                 </div>
             </div>

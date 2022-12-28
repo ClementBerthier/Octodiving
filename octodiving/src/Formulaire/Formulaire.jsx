@@ -17,14 +17,12 @@ class FormExampleSubcomponentControl extends Component {
     return (
       <Form>
         <Form.Group widths='equal'>
-          <Form.Input fluid label='First name' placeholder='First name' />
-          <Form.Input fluid label='Last name' placeholder='Last name' />
-          <Form.Select
-            fluid
-            label='Gender'
-            options={options}
-            placeholder='Gender'
-          />
+          <Form.Input fluid label='Votre société' placeholder='Nom de votre société' />
+          <Form.Input fluid label='Nom' placeholder='Votre nom' />
+          <Form.Input fluid label='Prénom' placeholder='Votre prénom' />
+          <Form.Input fluid label='N° SIRET' placeholder='Votre n° SIRET' />
+          <Form.Input fluid label='E-mail' placeholder='Votre E-mail' />
+          <Form.Input fluid label='N° Téléphone' placeholder='Votre numéro' />          
         </Form.Group>
         <Form.Group inline>
           <label>Size</label>
