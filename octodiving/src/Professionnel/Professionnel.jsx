@@ -1,5 +1,8 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../NavBar/NavBar";
+import PriceArray from "../PriceArray/PriceArray";
+import Formulaire from "../Formulaire/Formulaire";
+ 
 import "./stylesProfessionnel.scss";
 
 function Professionnel (){
@@ -7,9 +10,15 @@ function Professionnel (){
         <div className="professionnel">
             <Navbar />
             <div>
-                <h1>Tarif</h1>
-                <p>Découvrez nous en images.</p>
-                <form action=""></form>
+                <div className="arrayContainer">
+                    <h1>Tarif</h1>
+                    <div className="array">
+                        <PriceArray />
+                    </div>
+                </div>
+                <div>
+                    <Formulaire />
+                </div>
             </div>
             <Footer />
 

@@ -1,0 +1,22 @@
+.array{
+    width: 50%;
+    position: relative;
+}
+
+
+.prices{
+    font-size: 1.5em;
+}
+
+.title{
+    font-size: 2em;
+   
+}
+
+.titlePrice{
+    font-size: 2em;
+    @media screen and (max-width: 768px){
+        font-size: 1.5em;
+    }
+
+}
