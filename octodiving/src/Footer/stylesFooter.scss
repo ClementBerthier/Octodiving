@@ -6,68 +6,85 @@
 
         .contactContainer{
             padding: 4em 8em;
-
+            
+            @media screen and (max-width: 858px){   
+                font-size: 0.8em;    
+            }
+            @media screen and (max-width: 1060px){   
+                padding: 4em 1em;
+            }
+            
             h1{
                 color: RGB(26, 148, 243);
             }
-
+            
             .clientList{
                 padding: 2em
             }
-
+            
             .contactDetail{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                @media screen and (max-width: 768px){   
+                    flex-direction: column;
+                    align-items: center;    
+                }
+                
 
+                
                 .way{
                     display: flex;
                     flex-direction: row;
-                    align-items: center;                    
+                    align-items: center; 
+                    
                 }
-
+                
                 .contactText{
                     font-size: 1.5em;
                     padding: 1em 1.5em;
                     color: white; 
+                   
                     
                     .contactValue{
                         font-size: 1.3em;
                         color: white;
                         font-weight: 800;
-
                         
-
+                        
+                        
                     }
-
+                    
                     .contactTitle{
                         color: RGB(138, 139, 141);
                         margin: 0.5em 0;
                     }
+                    
                 }
-
                 
-
+                
+                
             }
         }
     }
-
+    
     .endingFooter{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         margin: 1em 0;
-
+        
         .logo{
-            
-           .linkLogo{
-            margin: 2em;
-           }
+            display: flex;
+
+            .linkLogo{
+                margin: 2em;
+            }
         }
-
+        
         .returnPresentation{
-
+            
             img{
                 padding: 1.5em;
                 width: 30%;
@@ -75,6 +92,7 @@
             }
         }
     }
-
-
+    
+    
 }
+

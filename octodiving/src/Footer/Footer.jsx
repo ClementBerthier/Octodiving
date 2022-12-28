@@ -17,7 +17,7 @@ function Footer (){
                     <div>
                         <div className="contactDetail">
                             <div className="way">
-                                <div>
+                                <div className='icon'>
                                     <img src="../img/phone-call.svg" alt="Telephone" />
                                 </div>
                                 <div className="contactText">
@@ -26,7 +26,7 @@ function Footer (){
                                 </div>
                             </div>
                             <div className="way">
-                                <div>
+                                <div className='icon'>
                                     <img src="../img/mail.svg" alt="E-mail" />
                                 </div>
                                 <div className="contactText">
