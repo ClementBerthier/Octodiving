@@ -5,7 +5,6 @@ import "./stylesNavBar.scss";
 
 function Navbar (){
     const [showLinks, setShowLinks]= useState(false);
-    const [showBurger, setShowBurger] = useState(false);
 
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
@@ -21,6 +20,11 @@ function Navbar (){
                 >
                     <span className="burgerBar"></span>
                 </button>
+                <a href="/" className="clubName">
+                    <img src="../img/nom-vectoriel-nb.png" alt="clubName"  />
+                </a>
+                <NavLink to="/contact" className={"link"}>Contact</NavLink>
+
             <div className={`navlink ${showLinks ? "showNav" : "hideNav"}`}>
                 <a href="/" className={"linkLogo"}>
                     <img src="../img/Logo-poulpe.png" alt="Poulpe" />

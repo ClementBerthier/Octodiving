@@ -37,6 +37,33 @@
 @media screen and (max-width: 768px){
     .navbar{
         padding: 2.5em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10em;
+
+        
+
+        .clubName{
+            width: 20%;
+
+            img{
+                display:block;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+
+        .link{
+            color: white;
+            border: 2px solid white;
+            font-size: 1.5em;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.5em 2em;
+        }
         
     }
     .navlink{
@@ -49,6 +76,10 @@
         background-color: rgb(146, 146, 146);
         align-items: center;
         justify-content: center;
+
+        img:hover{
+            background-color: RGB(26, 87, 219);
+        }
     }
 
     .showNav{
@@ -65,11 +96,7 @@
     }
     
     .burger {
-        position: sticky;
-        top: 1rem;
-        right: 1rem;
-        visibility: visible;
-        padding-left: 2em;
+        margin-left: 2.5em;
     }
 
    
@@ -85,10 +112,11 @@
         display: block;
         width: 40px;
         height: 3px;
+        right: 0.5em;
         position: relative;
         border-radius: 3px;
-        background-color: white;        
-    }
+        background-color: white;
+        }
 
     .burgerBar::before,
     .burgerBar::after {
