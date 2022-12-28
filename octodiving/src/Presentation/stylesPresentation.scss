@@ -13,7 +13,7 @@
             font-weight: 900;
 
             @media screen and (max-width: 950px){
-                font-size: 5em;
+                font-size: 6em;
             }
         }
     }
@@ -24,6 +24,9 @@
         align-items: center;
         justify-content: center;
         background-color: RGB(244, 244, 244);
+        @media screen and (max-width: 768px){   
+           flex-direction: column;    
+        }
 
         
         .firstParagraph{
@@ -33,12 +36,21 @@
             font-size: 2.5em;
             font-weight:800;
             border-right: 2px solid black;
+            @media screen and (max-width: 768px){   
+                font-size: 3em;
+                border-right: none;
+                border-bottom: 2px solid black;    
+            }
         }
 
         .secondParagraph{
             padding: 0 2.5em;
             text-align: center;
             font-size: 1.2em;
+            @media screen and (max-width: 768px){   
+                font-size: 2em;
+                padding-bottom: 1em;    
+            }
         }
     }
 
@@ -47,10 +59,37 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        
+        @media screen and (max-width: 768px){   
+            flex-direction: column; 
+        }
+        
+        .advantagePicture{
+            height: 30em;
+            @media screen and (max-width: 768px){   
+                height: 90em;    
+            }
+            
+            img{
+                height: 100%;
+                padding: 1.5em 4em;
+                @media screen and (max-width: 768px){
+                    padding: 2em 0;    
+                }
+                
+    
+            }
+    
+        }
 
         .advantageSkill{
             margin: 1em 0;
-            color: RGB(36, 36, 151);
+            color: RGB(36, 36, 151);            
+            @media screen and (max-width: 768px){   
+                display: flex;
+                font-size: 1.5em;
+                padding: 0 0.5em;    
+            }
 
             .number{
                 padding: 0 0.5em;
@@ -64,23 +103,17 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                margin: 1.5em 0
+                margin: 1.5em 0;
+
+                .textSkill h2, p{
+                    margin: 0;
+                }
 
             }
 
           
         }
 
-        .advantagePicture{
-            height: 30em;
-
-            img{
-                height: 100%;
-                padding: 1.5em 4em;
-
-            }
-
-        }
     }
 
     .description{
@@ -92,6 +125,7 @@
 
             @media screen and (max-width: 768px){   
                 margin: 0;
+                padding: 1em 5em;
             }
         }
 
@@ -100,25 +134,34 @@
             h1{
                 font-size: 2.5em;
                 padding: 0.5em 0;
+                @media screen and (max-width: 768px){   
+                    font-size: 3.5em;    
+                }
             }
             .dash{
                 border: 1px solid black;
                 margin-right: 60em;
                 padding-right: 10em;
-                position: absolute;
             }
         }
 
         .firstDescription{
+            
 
             h2{
                 margin: 1em 0;
                 padding-top: 1em;
+                font-size: 2em;
+                @media screen and (max-width: 768px){   
+                    font-size: 2.5em;    
+                }
             }
 
             ul{
                 margin-left: 1em;
             }
+
+         
 
             .specialityList{
                 list-style-type: circle;
@@ -127,10 +170,21 @@
             .firstItemList{
                 list-style-type: disc;
                 list-style-position:outside;
+                line-height: 1.2em;
+                font-size: 1.5em;
+                padding: 0.2em;
+                @media screen and (max-width: 768px){   
+                    font-size: 2em;    
+                }
+
             }        
 
             .secondItemList{
                 list-style-type: square;
+                padding: 0.2em;
+                
+
+
             }
 
         }

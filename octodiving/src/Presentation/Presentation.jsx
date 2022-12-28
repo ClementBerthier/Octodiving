@@ -21,6 +21,9 @@ function Presentation (){
                 </div>
             </div>
             <div className="advantage">
+                <div className="advantagePicture">
+                    <img src="../img/photo-plongeur.jpg" alt="plongeur" />
+                </div>                
                 <div className="advantageSkill">
                     <div className="Skill">
                         <p className="number">01</p>
@@ -32,7 +35,7 @@ function Presentation (){
                     <div className="Skill">
                         <p className="number">02</p>
                         <div className="textSkill">
-                            <h2>Multi système</h2>
+                            <h2>Multi système,</h2>
                             <p>Système français, PADI et SSI</p>
                         </div>
                     </div>
@@ -40,19 +43,12 @@ function Presentation (){
                         <p className="number">03</p>
                         <div className="textSkill">
                             <h2>Multi fonction</h2>
-                            <p>Moniteur de plongée</p>
-                            <p>Instructeur de secourisme DAN</p>
-                            <p>mécanique</p>
+                            <p>Moniteur de plongée,</p>
+                            <p>Instructeur de secourisme DAN,</p>
+                            <p>Mécanique</p>
                         </div>
                     </div>
                     
-                </div>
-                <div className="advantagePicture">
-                    <img src="../img/photo-plongeur.jpg" alt="plongeur" />
-                </div>
-                <div>
-                    <div className="square"></div>
-                    <div className="rectangle"></div>
                 </div>
             </div>
             <div className="description">
