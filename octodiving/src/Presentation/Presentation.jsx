@@ -9,7 +9,7 @@ function Presentation (){
         <Navbar />
         <div className="presentation">
             <div className="welcome">
-                <h1>Bienvenue chez Octo Diving</h1>
+                <h1>Bienvenue chez <span>Octo Diving</span></h1>
             </div>
             <div className="secondMainDiv">
                 <div className="firstParagraph">
