@@ -1,7 +1,16 @@
 .navbar{
     padding: 1em 0em;
     background-color: RGB(26, 148, 243);
+
+    .clubName{
+        display: none;
+
+    }
     
+    .contactLink{
+        display: none;
+    }
+
     .burger{
         width: 40px;
         height: 40px;
@@ -40,12 +49,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10em;
+        gap: 15em;
 
         
 
         .clubName{
+            display: block;
             width: 20%;
+
 
             img{
                 display:block;
@@ -54,6 +65,10 @@
                 height: 100%;
 
             }
+        }
+
+        .contactLink{
+            display:block;
         }
 
         .link{

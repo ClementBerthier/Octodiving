@@ -23,7 +23,7 @@ function Navbar (){
                 <a href="/" className="clubName">
                     <img src="../img/nom-vectoriel-nb.png" alt="clubName"  />
                 </a>
-                <NavLink to="/contact" className={"link"}>Contact</NavLink>
+                <NavLink to="/contact" className={"link contactLink"}>Contact</NavLink>
 
             <div className={`navlink ${showLinks ? "showNav" : "hideNav"}`}>
                 <a href="/" className={"linkLogo"}>
