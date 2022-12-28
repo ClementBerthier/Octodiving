@@ -1,6 +1,7 @@
 .navbar{
     padding: 1em 0em;
     background-color: RGB(26, 148, 243);
+    display: flex;
 
     .clubName{
         display: none;
@@ -44,14 +45,18 @@
 }
 
 @media screen and (max-width: 768px){
+
+
     .navbar{
         padding: 2.5em 0;
-        display: flex;
+        
+
+        .responsiveElement{
+            display: flex;
         flex-direction: row;
         align-items: center;
         gap: 15em;
-
-        
+        }    
 
         .clubName{
             display: block;

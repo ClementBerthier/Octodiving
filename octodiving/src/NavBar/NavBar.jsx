@@ -14,6 +14,7 @@ function Navbar (){
 
     return (
         <div className="navbar">
+            <div className="responsiveElement">
                 <button
                     className="burger"
                     onClick={handleShowLinks}
@@ -24,6 +25,7 @@ function Navbar (){
                     <img src="../img/nom-vectoriel-nb.png" alt="clubName"  />
                 </a>
                 <NavLink to="/contact" className={"link contactLink"}>Contact</NavLink>
+            </div>
 
             <div className={`navlink ${showLinks ? "showNav" : "hideNav"}`}>
                 <a href="/" className={"linkLogo"}>
