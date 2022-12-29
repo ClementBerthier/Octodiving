@@ -3,12 +3,12 @@ import { Checkbox, Form, Select } from 'semantic-ui-react'
 import './stylesFormulaire.scss'
 
 const prestationOption =[  
-  { key: 'PL1/2J', value: 'PL1/2J', text: 'Prestation 1/2 journée'},
+  { key: 'PL1/2J', value: 'PL12', text: 'Prestation 1/2 journée'},
   { key: 'PL1J', value: 'PL1J', text: 'Prestation 1 jour' },
   { key: 'PLWE', value: 'PLWE', text: 'Prestation Week-end' },
   { key: 'PL1S', value: 'PL1S', text: 'Prestation 1 semaine' },
   { key: 'PL1M', value: 'PL1M', text: 'Prestation 1 mois' },
-  { key: 'Autre', value: 'Autre', text: 'Autre à spécifier'},
+  { key: 'Autre', value: 'PDIF', text: 'Autre à spécifier'},
 ]
 
 function Formulaire () {
