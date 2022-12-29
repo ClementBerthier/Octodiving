@@ -16,6 +16,10 @@ function Professionnel (){
                         <PriceArray />
                     </div>
                 </div>
+                <div className="textContainer">
+                    <p>Vous souhaitez un devis ou de plus amples informations ? N'hésitez pas a remplir le formulaire ci-dessous et a posez vos question dans l'encart prévu a cet effet.</p>
+                </div>
+
                 <div className="formContainer">
                     <h2>Vos Renseignements</h2>
                     <Formulaire />

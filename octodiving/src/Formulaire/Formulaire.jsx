@@ -15,21 +15,21 @@ function Formulaire () {
     <Form action="https://formsubmit.co/dranalaen@gmail.com" method="POST" >
       <div className='prestation'>
         <Form.Group widths='equal'> 
-          <Form.Input fluid label='Nom' name="Nom" placeholder='Votre nom' />
-          <Form.Input fluid label='Prénom' name="Prénom" placeholder='Votre prénom' />
-          <Form.Input fluid label='E-mail' name="E-mail" placeholder='Votre E-mail' />
+          <Form.Input fluid label='Nom' name="Nom" placeholder='Votre nom' required={true}/>
+          <Form.Input fluid label='Prénom' name="Prénom" placeholder='Votre prénom' required={true}/>
+          <Form.Input fluid label='E-mail' name="E-mail" placeholder='Votre E-mail' required={true}/>
           <Form.Input fluid label='N° Téléphone' name="N° Téléphone" placeholder='Votre numéro' />
         </Form.Group>
         <Form.Group widths='equal'>
-          <Form.Input fluid label='Votre société' name="society" placeholder='Nom de votre société' />
-          <Form.Input fluid label='N° SIRET' name="SIRET" placeholder='Votre n° SIRET' />
+          <Form.Input fluid label='Votre société' name="society" placeholder='Nom de votre société' required={true}/>
+          <Form.Input fluid label='N° SIRET' name="SIRET" placeholder='Votre n° SIRET' required={true}/>
         </Form.Group>        
         <Form.Group widths='equal'>
           <Form.Input fluid label='Numéro' name="Numéro" placeholder='Numero' />
           <Form.Input fluid label='Rue' name="Rue" placeholder='Rue' />
           <Form.Input fluid label="Complément d'adresse" name="Complément d'adresse" placeholder='Complément' />
-          <Form.Input fluid label='Code postal' name="Code postal" placeholder='Code postal' />
-          <Form.Input fluid label='Ville' name="Ville" placeholder='Ville' />
+          <Form.Input fluid label='Code postal' name="Code postal" placeholder='Code postal' required={true}/>
+          <Form.Input fluid label='Ville' name="Ville" placeholder='Ville' required={true}/>
         </Form.Group>
         <Form.Group widths='equal'>
           <Select name="prestationname" placeholder='Sélectionnez votre prestation' options={prestationOption} /> 
@@ -38,21 +38,21 @@ function Formulaire () {
       <Form.Field control={Checkbox} label={{ children: "L'adresse de facturation est différente de l'adresse de prestation" }} />
       <div className='facturation'>
         <Form.Group widths='equal'> 
-          <Form.Input fluid label='Nom' name="Nom" placeholder='Votre nom' />
-          <Form.Input fluid label='Prénom' name="Prénom" placeholder='Votre prénom' />
-          <Form.Input fluid label='E-mail' name="E-mail" placeholder='Votre E-mail' />
+          <Form.Input fluid label='Nom' name="Nom" placeholder='Votre nom' required={true}/>
+          <Form.Input fluid label='Prénom' name="Prénom" placeholder='Votre prénom' required={true}/>
+          <Form.Input fluid label='E-mail' name="E-mail" placeholder='Votre E-mail' required={true}/>
           <Form.Input fluid label='N° Téléphone' name="N° Téléphone" placeholder='Votre numéro' />
         </Form.Group>
         
         <Form.Group widths='equal'>
           <Form.Input fluid label='Numéro'name="Numéro"  placeholder='Numero' />
-          <Form.Input fluid label='Rue' name="Rue" placeholder='Rue' />
+          <Form.Input fluid label='Rue' name="Rue" placeholder='Rue' required={true}/>
           <Form.Input fluid label="Complément d'adresse" name="Complément d'adresse" placeholder='Complément' />
-          <Form.Input fluid label='Code postal' name="Code postal" placeholder='Code postal' />
-          <Form.Input fluid label='Ville' name="Ville" placeholder='Ville' />
+          <Form.Input fluid label='Code postal' name="Code postal" placeholder='Code postal' required={true}/>
+          <Form.Input fluid label='Ville' name="Ville" placeholder='Ville' required={true}/>
         </Form.Group>
       </div>
-      <Form.TextArea label='Vous avez des questions ? ' placeholder='Tell us more about you...' />
+      <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" placeholder='Vos questions' maxlength="5000" />
       <Form.Button>Submit</Form.Button>
       <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>      
     </Form>
