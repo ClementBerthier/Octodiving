@@ -17,7 +17,7 @@ function Professionnel (){
                     </div>
                 </div>
                 <div className="formContainer">
-                    <h2>Vos Rensignements</h2>
+                    <h2>Vos Renseignements</h2>
                     <Formulaire />
                 </div>
             </div>

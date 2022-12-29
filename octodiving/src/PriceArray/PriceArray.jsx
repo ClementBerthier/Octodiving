@@ -19,7 +19,7 @@ const TableExamplePadded = () => (
           </Header>
         </Table.Cell>
         <Table.Cell textAlign='center' className="prices">
-          0.66€
+          0.66€/km
         </Table.Cell>        
       </Table.Row>
 
