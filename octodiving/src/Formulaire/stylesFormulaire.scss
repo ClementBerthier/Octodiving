@@ -1,0 +1,27 @@
+
+.prestation, .facturation{
+    margin: 2em 0
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.labelSelect{
+    font-weight: 900;
+}
+
+.selectContainer{
+   display: flex;
+   flex-direction: column;
+   margin-right: 140em;
+
+}
+
+.checkbox{
+    padding-bottom: 1em;
+}
