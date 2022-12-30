@@ -1,6 +1,8 @@
 import { useState } from "react";
 import {NavLink} from "react-router-dom";
+
 import "./stylesNavBar.scss";
+
 
 
 function NavBar (){
@@ -22,7 +24,7 @@ function NavBar (){
                     <span className="burgerBar"></span>
                 </button>
                 <a href="/" className="clubName">
-                    <img src="../img/nom-vectoriel-nb.png" alt="clubName"  />
+                    <img src='./img/nom-vectoriel-nb.png' alt="clubName"  />
                 </a>
                 <NavLink to="/contact" className={"link contactLink"}>Contact</NavLink>
             </div>

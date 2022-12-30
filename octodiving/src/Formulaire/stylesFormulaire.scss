@@ -1,6 +1,10 @@
-
+.formContainer{
+    z-index: -1;
+}
 .prestation, .facturation{
-    margin: 2em 0
+    margin: 2em 0;
+    z-index: auto;
+    
 }
 
 .hidden{
@@ -18,12 +22,9 @@
 .selectContainer{
    display: flex;
    flex-direction: column;
-   margin-right: 125em;
+   width: 15em;
 
-   @media screen and (max-width: 768px){
-    margin-right: 35em;
-   }
-
+   
 }
 
 .checkbox{
