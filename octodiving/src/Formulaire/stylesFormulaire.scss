@@ -18,7 +18,11 @@
 .selectContainer{
    display: flex;
    flex-direction: column;
-   margin-right: 140em;
+   margin-right: 125em;
+
+   @media screen and (max-width: 768px){
+    margin-right: 35em;
+   }
 
 }
 

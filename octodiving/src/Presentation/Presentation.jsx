@@ -1,12 +1,12 @@
 import Footer from "../Footer/Footer";
-import Navbar from "../NavBar/NavBar";
+import NavBar from "../NavBar/NavBar";
 
 import "./stylesPresentation.scss";
 
 function Presentation (){
     return (
         <>
-        <Navbar />
+        <NavBar />
         <div className="presentation">
             <div className="welcome">
                 <h1>Bienvenue chez <span>Octo Diving</span></h1>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Checkbox, Form, Select } from 'semantic-ui-react'
+import { Checkbox, Form, } from 'semantic-ui-react'
 import './stylesFormulaire.scss'
 
 const prestationOption =[  
@@ -16,7 +16,7 @@ function Formulaire () {
   const [checkboxValue, setCheckboxValue] = useState(false)
 
   const handleChange = (event) =>{
-    
+    setCheckboxValue(!checkboxValue)
   }
   
   return (
@@ -44,7 +44,7 @@ function Formulaire () {
           <select name="Prestation" placeholder='Votre prestation'>
             <option value="default" disabled >Choix prestation</option>
             {prestationOption.map((option)=>(
-              <option value={option.value}>{option.text}</option>
+              <option key={option.key} value={option.value}>{option.text}</option>
             ))}
           </select>
           <Form.Input fluid type='number' label='Quantité' name="Quantité" placeholder="1" required={true}  />
@@ -54,23 +54,23 @@ function Formulaire () {
       <div className='checkbox'>
         <Form.Field control={Checkbox} onChange={handleChange} label={{ children: "L'adresse de facturation est différente de l'adresse de prestation" }} />
       </div>
-      <div className={`facturation ${checkboxValue ? "hidden" : "active"}`} >
+      <div className={`facturation ${!checkboxValue ? "hidden" : "active"}`} >
         <Form.Group widths='equal'> 
-          <Form.Input fluid label='Nom' name="Nom Facturation" placeholder='Votre nom' required={true}/>
-          <Form.Input fluid label='Prénom' name="Prénom Facturation" placeholder='Votre prénom' required={true}/>
-          <Form.Input fluid label='E-mail' name="E-mail Facturation" placeholder='Votre E-mail' required={true}/>
+          <Form.Input fluid label='Nom' name="Nom Facturation" placeholder='Votre nom'  required={!checkboxValue ? false : true}/>
+          <Form.Input fluid label='Prénom' name="Prénom Facturation" placeholder='Votre prénom' required={!checkboxValue ? false : true}/>
+          <Form.Input fluid label='E-mail' name="E-mail Facturation" placeholder='Votre E-mail' required={!checkboxValue ? false : true}/>
           <Form.Input fluid label='N° Téléphone' name="N° Téléphone Facturation" placeholder='Votre numéro' />
         </Form.Group>
         
         <Form.Group widths='equal'>
           <Form.Input fluid label='Numéro'name="Numéro Facturation"  placeholder='Numero' />
-          <Form.Input fluid label='Rue' name="Rue Facturation" placeholder='Rue' required={true}/>
+          <Form.Input fluid label='Rue' name="Rue Facturation" placeholder='Rue' required={!checkboxValue ? false : true}/>
           <Form.Input fluid label="Complément d'adresse" name="Complément d'adresse Facturation" placeholder='Complément' />
-          <Form.Input fluid label='Code postal' name="Code postal Facturation" placeholder='Code postal' required={true}/>
-          <Form.Input fluid label='Ville' name="Ville Facturation" placeholder='Ville' required={true}/>
+          <Form.Input fluid label='Code postal' name="Code postal Facturation" placeholder='Code postal' required={!checkboxValue ? false : true}/>
+          <Form.Input fluid label='Ville' name="Ville Facturation" placeholder='Ville' required={!checkboxValue ? false : true}/>
         </Form.Group>
       </div>
-      <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" placeholder='Vos questions' maxlength="5000" />
+      <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" placeholder='Vos questions' maxLength="5000" />
       <Form.Button>Submit</Form.Button>
       <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>      
     </Form>

@@ -1,11 +1,11 @@
 import Footer from "../Footer/Footer";
-import Navbar from "../NavBar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import "./stylesContact.scss";
 
 function Contact (){
     return (
         <div className="contact">
-            <Navbar />
+            <NavBar />
             <div>
                 <div>
                     <h1>Nous Contacter</h1>

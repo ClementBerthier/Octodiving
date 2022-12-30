@@ -1,4 +1,7 @@
-
+.clubName{
+    visibility: visible;
+    border: 2px solid black;
+}
 .arrayContainer{
     display: flex;
     flex-direction: column;
@@ -18,6 +21,6 @@
 }
 
 .formContainer{
-    margin: 0 10em;
+   margin: 0 10em;
 }
 

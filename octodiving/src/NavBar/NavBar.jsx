@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import "./stylesNavBar.scss";
 
 
-function Navbar (){
+function NavBar (){
     const [showLinks, setShowLinks]= useState(false);
 
     const handleShowLinks = () => {
@@ -41,4 +41,4 @@ function Navbar (){
     )
 }
 
-export default Navbar;
+export default NavBar;
