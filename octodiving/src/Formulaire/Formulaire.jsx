@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useReducer, useState } from 'react'
 import { Checkbox, Form, } from 'semantic-ui-react'
 import './stylesFormulaire.scss'
 
@@ -26,26 +26,52 @@ const initialState = {
     prestation: '',
     quantite: '',
     checkbox: '',
+    nomFacturation: '',
+    prenomFacturation: '',
+    emailFacturation: '',
+    telephoneFacturation: '',
+    numeroFacturation: '',
+    rueFacturation: '',
+    complementAdresseFacturation: '',
+    codePostalFacturation: '',
+    villeFacturation: '',
+    textarea: '',
+  }
 
+const SAVE_FORM = "SAVE_FORM"
+const actionSaveForm = (name, value) => ({type: SAVE_FORM, payload: {name, value}});
 
-
-    
+function reducer(state, action){
+    switch (action.type){
+        case SAVE_FORM:
+            return{
+                ...state,
+                [action.payload.name]: action.payload.value,
+            };
+        default:{
+            throw new Error ('action not recognized');
+        }
+    }
 }
 
 function Formulaire () {
-  const [checkboxValue, setCheckboxValue] = useState(false)
+  const [checkboxValue, setCheckboxValue] = useState(false);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChange = (event) =>{
     setCheckboxValue(!checkboxValue)
   }
 
+  const handleFormChange = (event) => {
+    dispatch(actionSaveForm(event.target.name, event.target.value))
+  }
 
   
   return (
     <Form action="https://formsubmit.co/dranalaen@gmail.com" method="POST" className='formContainer'>
       <div className='prestation'>
         <Form.Group widths='equal'> 
-          <Form.Input fluid label='Nom' name="nom" placeholder='Votre nom' required={true}/>
+          <Form.Input fluid label='Nom' name="nom" placeholder='Votre nom' value={state.nom} required={true} onChange={handleFormChange}/>
           <Form.Input fluid label='Prénom' name="prenom" placeholder='Votre prénom' required={true}/>
           <Form.Input fluid label='E-mail' name="email" placeholder='Votre E-mail' required={true}/>
           <Form.Input fluid label='N° Téléphone' name="telephone" placeholder='Votre numéro' />
@@ -92,7 +118,7 @@ function Formulaire () {
           <Form.Input fluid label='Ville' name="villeFacturation" placeholder='Ville' required={!checkboxValue ? false : true}/>
         </Form.Group>
       </div>
-      <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" placeholder='Vos questions' maxLength="5000" />
+      <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" name='textarea' placeholder='Vos questions' maxLength="5000" />
       <Form.Button>Submit</Form.Button>
       <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>      
     </Form>

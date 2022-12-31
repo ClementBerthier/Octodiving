@@ -19,6 +19,7 @@
         border: none;
         color: inherit;
         
+        
     }
     .navlink{
         display: flex;
@@ -95,6 +96,8 @@
         background-color: rgb(73, 73, 73);
         align-items: center;
         justify-content: center;
+        z-index: 1;
+        
 
         img:hover{
             background-color: RGB(26, 87, 219);

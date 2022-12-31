@@ -12,7 +12,7 @@ function NavBar (){
         setShowLinks(!showLinks);
     }
 
- 
+    
 
     return (
         <div className="navbar">
