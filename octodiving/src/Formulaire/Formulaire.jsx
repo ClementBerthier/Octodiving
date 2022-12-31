@@ -84,20 +84,23 @@ function Formulaire () {
           <Form.Input fluid label='Numéro' name="numero" placeholder='Numero' />
           <Form.Input fluid label='Rue' name="rue" placeholder='Rue' required={true}/>
           <Form.Input fluid label="Complément d'adresse" name="complementAdresse" placeholder='Complément' />
+        </Form.Group>
+        <Form.Group widths='equal'>  
           <Form.Input fluid label='Code postal' name="codePostal" placeholder='Code postal' required={true}/>
           <Form.Input fluid label='Ville' name="ville" placeholder='Ville' required={true}/>
         </Form.Group>
-        <div className='selectContainer'>
-          <label htmlFor="Prestation" className='labelSelect'>Choisissez votre prestation</label>
-          <select name="prestation" placeholder='Votre prestation'>
-            <option value="default" disabled >Choix prestation</option>
-            {prestationOption.map((option)=>(
-              <option key={option.key} value={option.value}>{option.text}</option>
-            ))}
-          </select>
-          <Form.Input fluid type='number' label='Quantité' name="quantite" placeholder="1" required={true}  />
-
-        </div>
+        <Form.Group widths='15'>
+          <div className='selectContainer'>
+            <label htmlFor="Prestation" className='labelSelect'>Choisissez votre prestation</label>
+            <select name="prestation" placeholder='Votre prestation'>
+              <option value="default" disabled >Choix prestation</option>
+              {prestationOption.map((option)=>(
+                <option key={option.key} value={option.value}>{option.text}</option>
+              ))}
+            </select>
+          </div>
+            <Form.Input fluid className='quantity' type='number' label='Quantité' name="quantite" placeholder="1" required={true}  />
+        </Form.Group>  
       </div>
       <div className='checkbox'>
         <Form.Field control={Checkbox} name='checkbox' onChange={handleChange} label={{ children: "L'adresse de facturation est différente de l'adresse de prestation" }} />
@@ -114,6 +117,8 @@ function Formulaire () {
           <Form.Input fluid label='Numéro'name="numeroFacturation"  placeholder='Numero' />
           <Form.Input fluid label='Rue' name="rueFacturation" placeholder='Rue' required={!checkboxValue ? false : true}/>
           <Form.Input fluid label="Complément d'adresse" name="complementAdresseFacturation" placeholder='Complément' />
+        </Form.Group>
+        <Form.Group widths='equal'>
           <Form.Input fluid label='Code postal' name="codePostalFacturation" placeholder='Code postal' required={!checkboxValue ? false : true}/>
           <Form.Input fluid label='Ville' name="villeFacturation" placeholder='Ville' required={!checkboxValue ? false : true}/>
         </Form.Group>

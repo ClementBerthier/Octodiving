@@ -17,12 +17,12 @@
 }
 
 .selectContainer{
-   display: flex;
-   flex-direction: column;
-   width: 15em;
-
+    display: flex;
+    flex-wrap: wrap; 
    
 }
+
+
 
 .checkbox{
     padding-bottom: 1em;
