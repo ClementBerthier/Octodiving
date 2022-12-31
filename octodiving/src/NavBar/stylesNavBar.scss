@@ -51,17 +51,20 @@
     .navbar{
         padding: 2.5em 0;
         
+        
 
         .responsiveElement{
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 25em;
+            
         }    
 
         .clubName{
             display: block;
-            width: 20%;
+            width: 15em;
+            
 
 
             img{
