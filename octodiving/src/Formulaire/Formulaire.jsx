@@ -68,7 +68,7 @@ function Formulaire () {
 
   
   return (
-    <Form action="https://formsubmit.co/dranalaen@gmail.com" method="POST" className='formContainer'>
+    <Form action="https://formsubmit.co/florian.bessiere.pro@gmail.com" method="POST" className='formContainer'>
       <div className='prestation'>
         <Form.Group widths='equal'> 
           <Form.Input fluid label='Nom' name="nom" placeholder='Votre nom' value={state.nom} required={true} onChange={handleFormChange}/>
@@ -125,7 +125,7 @@ function Formulaire () {
       </div>
       <Form.TextArea label="Vous avez des questions ou des informations à ajouter?" name='textarea' placeholder='Vos questions' maxLength="5000" />
       <Form.Button>Submit</Form.Button>
-      <input type="hidden" name="_next" value="http://localhost:3000/thanks"></input>      
+      <input type="hidden" name="_next" value="http://octodiving.fr/thanks"></input>      
     </Form>
   )
 
